@@ -1,0 +1,44 @@
+Introduction
+------------
+
+The listings service is used to register test assets for sale in a 
+PaySwarm-compatible system. It is primarily provided as a way to 
+help developers build new PaySwarm applications without having to
+generate and host PaySwarm listings.
+
+Typically, PaySwarm developers will upload listings to
+http://listings.dev.payswarm.com/ to be used in applications under
+development. These listings will then be utilized in test purchases.
+
+Usage
+-----
+
+The design of the listing service is fairly simple and straight-forward.
+
+To register a new listing:
+
+   Mint a new URL on the server by POSTing a JSON-LD document to that
+   URL. Use a prefix, such as a nickname or project as the base part
+   of the URL.
+   
+To update a listing:
+
+   POST a new JSON-LD document to a previously used URL.
+
+To retrieve a listing:
+
+   Perform a GET on a previously POSTed URL.
+
+To remove a listing:
+
+   Perform a DELETE on a previously POSTed URL.
+
+Source Code
+-----------
+
+You can retreive the source code for the http://listings.dev.payswarm.com/
+website from github:
+
+https://github.com/digitalbazaar/listings.dev.payswarm.com
+
+
