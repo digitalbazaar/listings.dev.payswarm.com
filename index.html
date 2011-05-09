@@ -34,18 +34,13 @@
   <div class="row">
     <div class="twelvecol last">
 <p class="largeprint">
-The listings service is used to register test assets for sale in a 
-PaySwarm-compatible system. It is primarily provided as a way to 
-help developers build new PaySwarm applications without having to
-generate and host PaySwarm listings.
+This listings service is used to register test assets for sale when developing
+and testing <a href="http://payswarm.com/">PaySwarm</a> software. It is 
+primarily provided as a way to help developers build new PaySwarm 
+applications without having to generate and host PaySwarm listings. The
+listings service is designed to be simple to use:
 </p>
 
-<p class="largeprint">
-Typically, PaySwarm developers will upload listings to
-http://listings.dev.payswarm.com/ to be used in applications under
-development. These listings will then be utilized in test purchases. Using
-the listing is pretty easy and straight-forward:
-</p>
     </div>
   </div>
 </div>
@@ -55,9 +50,9 @@ the listing is pretty easy and straight-forward:
     <div class="twelvecol">
         <h2>Create</h2>
         <p class="nomargin">
-   Mint a new URL on the server by POSTing a JSON-LD document to that
+   Mint a new URL on the server by POSTing a JSON-LD listing to that
    URL. Use a prefix, such as a nickname or project as the base part
-   of the URL.        
+   of the URL.
         </p>
         <pre>curl -X POST -d "{}" http://listings.dev.payswarm.com/example/test</pre>
     </div>
@@ -100,13 +95,15 @@ the listing is pretty easy and straight-forward:
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a> 
     </div> 
     <div class="ninecol last"> 
-      <p>&copy; 2010-2011 Digital Bazaar, Inc. 
+      <p>&copy; 2011 Digital Bazaar, Inc. 
 Website CSS created by <a href="http://cssgrid.net/">@andytlr</a> 
 and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/au/">
 Creative Commons Attribution-ShareAlike 3.0 Australia License</a>. All other
 website content is licensed under a 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
-Creative Commons Attribution-ShareAlike 3.0 License</a>
+Creative Commons Attribution-ShareAlike 3.0 License</a>. Source code is 
+licensed under the <a href="http://www.gnu.org/licenses/gpl.html">GNU GPLv3</a> 
+license.
 </p> 
     </div> 
   </div> 
