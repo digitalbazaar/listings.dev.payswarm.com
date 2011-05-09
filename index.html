@@ -54,7 +54,7 @@ the listing is pretty easy and straight-forward:
   <div class="row">
     <div class="twelvecol">
         <h2>Create</h2>
-        <p>
+        <p class="nomargin">
    Mint a new URL on the server by POSTing a JSON-LD document to that
    URL. Use a prefix, such as a nickname or project as the base part
    of the URL.        
@@ -66,17 +66,15 @@ the listing is pretty easy and straight-forward:
   <div class="row">
     <div class="twelvecol">
         <h2>Retrieve</h2>
+        <p class="nomargin">Perform a GET on a previously POSTed URL.</p>
         <pre>curl -X GET http://listings.dev.payswarm.com/example/test</pre>
-        <p>
-   Perform a GET on a previously POSTed URL.
-        </p>
     </div>
   </div>
     
   <div class="row">
     <div class="twelvecol">
         <h2>Update</h2>
-        <p>
+        <p class="nomargin">
    POST a new JSON-LD document to a previously used URL.
         </p>
         <pre>curl -X POST -d "{}" http://listings.dev.payswarm.com/example/test</pre>
@@ -87,7 +85,7 @@ the listing is pretty easy and straight-forward:
     <div class="twelvecol">
         <h2>Delete</h2>
 
-        <p>
+        <p class="nomargin">
    Perform a DELETE on a previously POSTed URL.
         </p>
         <pre>curl -X DELETE http://listings.dev.payswarm.com/example/test</pre>

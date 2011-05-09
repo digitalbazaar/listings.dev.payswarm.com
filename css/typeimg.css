@@ -45,6 +45,10 @@ p, ul, ol, blockquote {
 margin-bottom: 24px;	/* Changing this will break the baseline grid. */
 }
 
+.nomargin {
+margin-bottom: 0px;
+}
+
 li {
 margin-bottom: 6px;
 }
@@ -66,7 +70,8 @@ font-weight: lighter;
 
 h2 {
 font-size: 20px;
-margin-bottom: 24px;	/* Changing this will break the baseline grid. */
+margin-top: 12px;	/* Changing this will break the baseline grid. */
+margin-bottom: 12px;	/* Changing this will break the baseline grid. */
 font-family: Georgia, serif;
 font-weight: lighter;
 }
