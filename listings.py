@@ -182,7 +182,7 @@ def handler(req):
             req.content_type = 'text/plain'
             req.write("Error: The listing was not found: %s\n" % service)
         else:
-            req.content_type = 'application/json'
+            req.content_type = 'application/ld+json'
             req.write(listing)
     elif(method == "DELETE"):
         dbdelete(req, conn)
